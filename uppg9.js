@@ -5,10 +5,17 @@ function uppg9 (){
     // i funktionen du loopa igenom arrayen och kolla med en if-sats om  talet är jämt eller udda
     // i if-sattsen skriv ut i konsolen resultatet
     // resultatet ska loggas i formatet: talet och sen ordet "jämt" eller "udda"
-
-    // anropa funktionen och skicka med en array som argument
-
-  
+function sort (numbers){
+    for (let number of numbers){
+     if (number % 2 === 0){
+        console.log (number + " jämt")
+    } else {
+        console.log (number + " udda")
+    }
+}   
 }
-
+  // anropa funktionen och skicka med en array som argument
+sort ([5,8,23,4,12,5,10,9,20,23])
+}
+uppg9()
 module.exports = { uppg9 };
